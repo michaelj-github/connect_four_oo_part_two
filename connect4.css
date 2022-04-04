@@ -1,0 +1,72 @@
+/* game board table */
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  animation-name: dropDown;
+  animation-duration: 1s;
+}
+
+.piece.p1 {
+  background-color: #FFDD00;
+}
+
+.piece.p2 {
+  background-color: #0057B7;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: lightgray;
+}
+
+#button {
+  margin: 10px;
+}
+
+#messages {
+  margin: 20px;
+  /* width: 100%; */
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+
+.gameOver {
+animation-name: pulse;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {color: white;}
+  to {color: red;}
+}
+
+@keyframes dropDown {
+from {
+margin-top: -400px;
+}
+to {
+margin-bottom: 0px;
+}
+}
