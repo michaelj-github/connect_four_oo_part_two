@@ -15,7 +15,7 @@ class Game {
     this.makeHtmlBoard();
     this.gameOver = false;
     this.playerColor = [];
-    this.playerColor[0] = "#FFDD00";
+    this.playerColor[0] = "#FFD700";
     this.playerColor[1] = '#0057B7';
 
 }
